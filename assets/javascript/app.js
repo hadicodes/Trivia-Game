@@ -58,15 +58,23 @@ function checkAnswer() {
     }
 }
 
-//Count down
-var count = 40;
-var total = setInterval(timer, 1000);
+function showResults() {
+    $('#results').append('Correctly answered: ' + correctAnswers + '</br>');
+    $('#results').append('Incorrectly answered: ' + incorrectAnswers + '</br>');
+    $('#results').append('Unanswered: ' + unanswered + '</br>');
+}
+
+//Count down timer at the top of the page
+//user has 40 seconds to complete the quiz
+var count = 25;
+var interval;
+var timeUp;
 
 function timer() {
     count--;
     if (count === 0) {
         timerMessage();
-        clearInterval(total);
+        clearInterval(interval);
     }
     $('#countdown-timer').html(count);
 }
@@ -74,3 +82,32 @@ function timer() {
 function timerMessage() {
     $('#timer-message').html('Time is up!');
 }
+
+
+$(document).ready(function() {
+    $('.start').show();
+    $('.game').hide();
+    $('.results').hide();
+    $('#start-button').on('click', function() {
+        $('.game').show();
+        interval = setInterval(timer, 1000);
+        $('.start').hide();
+        timeUp = setTimeout(function() {
+            clearInterval(interval);
+            checkAnswer();
+            $('#results').append('You ran out of time!</br>');
+            showResults();
+            $('.results').show();
+            $('.game').hide();
+        }, 25000);
+    });
+    $('#done-button').on('click', function() {
+        clearTimeout(timeUp);
+        clearInterval(interval);
+        checkAnswer();
+        showResults();
+        $('.results').show();
+        $('.game').hide();
+    });
+
+});

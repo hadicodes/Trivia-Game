@@ -1,20 +1,12 @@
-    /*Background Gradient*/
-    
-    .body-page {
-        background: #00c6ff;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #00c6ff, #0072ff);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #00c6ff, #0072ff);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    body {
+        background: url(../images/gplaypattern.png);
+        background-repeat: repeat;
     }
     
     .game-box {
+        background-color: #fafafa;
         border-radius: 6px;
-        background: url(../images/gplaypattern.png);
-        background-position: left top;
-        background-repeat: repeat;
-        padding: 20px;
+        border: #0080FF 3px solid;
         width: 960px;
         height: 600px;
         text-align: center;
@@ -23,21 +15,26 @@
     }
     
     .trivia-title {
-        color: #FF6138;
+        color: #0080FF;
         font-weight: bold;
         font-size: 50px;
         line-height: 20px;
-        padding-bottom: 30px;
+        padding: 30px;
     }
     
     h5 {
         font-size: 21px;
-        background: -webkit-linear-gradient(#38B1FF, #0F00E6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
     
     .question-title {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    
+    input[type=radio] {
+        margin: 10px;
+    }
+    
+    button {
+        margin: 10px;
     }

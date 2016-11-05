@@ -18,44 +18,53 @@
         <div class="header">
             <h1 class="trivia-title">The Health Trivia Game</h1>
         </div>
-        <div id="countdown-timer">
-            <span>40</span>
+        <div id="start-game" class="start">
+            <p>Click on the start button to begin. You have 25 seconds to answer all questions. Click the done button when you are finished.</p>
+            <button class="btn btn-primary start" id="start-button">Start</button>
         </div>
-        <div id="timer-message"></div>
-        <div class="Q1 question-title">
+        <div id="countdown-timer" class="game">
+            <span>25</span>
+        </div>
+        <div id="timer-message" class="game"></div>
+        <div class="Q1 question-title game">
             <h5>Q1: Doing this action can remove 2 years of a persons life expectancy?</h5>
             <input type="radio" name="q1" value="Sitting"> Sitting
             <input type="radio" name="q1" value="Eating Doritos"> Eating Doritos
             <input type="radio" name="q1" value="Watching TV"> Watching TV
             <input type="radio" name="q1" value="Complaining"> Complaining
         </div>
-        <div class="Q2 question-title">
+        <div class="Q2 question-title game">
             <h5>Q2: The human body can distinguish 500 shades of which color ?</h5>
             <input type="radio" name="q2" value="Red"> Red
             <input type="radio" name="q2" value="Purple"> Purple
             <input type="radio" name="q2" value="Grey"> Grey
             <input type="radio" name="q2" value="Blue"> Blue
         </div>
-        <div class="Q3 question-title">
+        <div class="Q3 question-title game">
             <h5>Q3: Wearing what in your ear can increase the bacteria in your ear 700 times.?</h5>
             <input type="radio" name="q3" value="Hearing Aids"> Hearing Aids
             <input type="radio" name="q3" value="Ear Plugs"> Ear Plugs
             <input type="radio" name="q3" value="Cotton Balls"> Cotton Balls
             <input type="radio" name="q3" value="Headphones"> Headphones
         </div>
-        <div class="Q4 question-title">
+        <div class="Q4 question-title game">
             <h5>Q4: Most people fall asleep in how many minutes?</h5>
             <input type="radio" name="q4" value="Five"> Five
             <input type="radio" name="q4" value="Seven"> Seven
             <input type="radio" name="q4" value="Ten"> Ten
             <input type="radio" name="q4" value="Fourteen"> Fourteen
         </div>
-        <div class="Q5 question-title">
+        <div class="Q5 question-title game">
             <h5>Q5: There are sixty thousand miles of what in the human body?</h5>
             <input type="radio" name="q5" value="Blood Vessels"> Blood Vessels
             <input type="radio" name="q5" value="Cells"> Cells
             <input type="radio" name="q5" value="Intestines"> Intestines
             <input type="radio" name="q5" value="Germs"> Germs
+        </div>
+        <div id="end-game" class='game'>
+            <button class="btn btn-primary" id="done-button">Done</button>
+        </div>
+        <div id="results" class="results">
         </div>
     </div>
     <!-- Javascript Link to game.js -->
