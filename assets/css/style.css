@@ -31,11 +31,8 @@
     }
     
     h5 {
-        font-size: 25px;
-        background: -webkit-linear-gradient(#38B1FF
-
-
-, #0F00E6);
+        font-size: 21px;
+        background: -webkit-linear-gradient(#38B1FF, #0F00E6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
