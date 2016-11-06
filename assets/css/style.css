@@ -38,3 +38,18 @@
     button {
         margin: 10px;
     }
+    
+    #numtimer {
+        font-size: 90px;
+    }
+    
+    #done-button {
+        width: 170px;
+    }
+    
+    .results {
+        font-size: 30px;
+        padding: 10px;
+        color: #E89F61
+;
+    }
