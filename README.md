@@ -14,3 +14,5 @@ The player will have a limited amount of time to finish the quiz.
 The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly. The game was made using HTML/CSS, Javascript, and Jquery.
 
 Hadi Yousufi 2016
+
+[Heroku App](https://shielded-beach-69318.herokuapp.com/)
