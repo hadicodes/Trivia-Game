@@ -1,5 +1,8 @@
 # TriviaGame
 
+### Update (April 13, 2017) this is an earlier project. If I were to make changes to this repo, I would allow the user to see their correct and incorrect responses at the end of the quiz.
+
+
 Welcome to Health Trivia
 
 Rules of the Game:
